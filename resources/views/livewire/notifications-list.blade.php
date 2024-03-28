@@ -5,13 +5,10 @@
     @foreach($notifications as $notification)
 
     <li class="list-group-item lh-1 p-0 w-100">
-      <a href="{{route('notification.index')}}"
-        class="fs-6 p-2 small nav-link primary-color-text dropDownHover w-100 text-start "
-        type="submit">{{$notification->body}}</a>
+      <a href="{{route('notification.index')}}" class="fs-6 p-2 small nav-link primary-color-text dropDownHover w-100 text-start " type="submit">{{$notification->body}}</a>
     </li>
     <li class="list-group-item bg-danger text-center p-0">
-      <button wire:click="clearNotificationList({{ $notification->id }})" type="button"
-        class="small fs-6 btn px-5 btn-danger btn-sm">{{__('ui.delete')}}</button>
+      <button wire:click="clearNotificationList({{ $notification->id }})" type="button" class="small fs-6 btn px-5 btn-danger btn-sm">{{__('ui.notificationsDelete')}}</button>
     </li>
     @endforeach
 
