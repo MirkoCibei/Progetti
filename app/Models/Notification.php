@@ -16,8 +16,11 @@ class Notification extends Model
         return $this->belongsTo(User::class);
     }
 
-    public static function createNotification()
+    public function setView($value)
     {
-        
+
+        $this->view= $value;
+        $this->save();
+        return;
     }
 }
