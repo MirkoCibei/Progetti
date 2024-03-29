@@ -16,7 +16,7 @@ class Notification extends Model
         return $this->belongsTo(User::class);
     }
 
-    public function setView($value)
+    public function setChecked($value)
     {
 
         $this->view= $value;

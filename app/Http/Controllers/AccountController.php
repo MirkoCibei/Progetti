@@ -28,7 +28,7 @@ class AccountController extends Controller
     
     public function notificationIndex()
     {
-        $notifications = Notification::where('view',false)->where('user_id',Auth::user()->id)->orderBy('id', 'DESC')->get();
+        $notifications = Notification::where('user_id',Auth::user()->id)->orderBy('id', 'DESC')->get();
     ;
 
         return view("accounts.notification_index",compact('notifications'));

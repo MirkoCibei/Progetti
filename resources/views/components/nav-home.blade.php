@@ -28,7 +28,7 @@
 
       </ul>
 
-      <livewire:notification-form />
+      
       @guest
       <div class="row m-0 me-lg-4 ms-lg-3">
         <div class="col-12 col-lg-6 py-2 px-0 p-lg-0 border-bottom noBorderBot">
@@ -43,25 +43,8 @@
 
 
       <div class=" me-3 position-relative d-flex align-items-center ">
-        <div class="dropdown background ">
-          @if(session()->has('success'))
-          <span class="position-absolute top-0 start-100 translate-middle rounded-pill bg-danger"
-            style="width:10px; height:10px"></span>
-          @endif
-          <button class="btn primary-color-text dropdown-toggle" type="button" data-bs-toggle="dropdown"
-            aria-expanded="false">
-            <i class="bi bi-bell-fill"></i>
-          </button>
-          <ul class="dropdown-menu background p-0">
-            <li>
-              <livewire:notifications-list />
-            </li>
-          </ul>
-        </div>
-
-
-
-
+        
+        <livewire:notifications-list />
 
         <button class="btn dropdown-toggle linkNav position-relative  " type="button" data-bs-toggle="dropdown"
           aria-expanded="false">

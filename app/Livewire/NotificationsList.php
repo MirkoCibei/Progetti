@@ -18,6 +18,12 @@ class NotificationsList extends Component
 {
 
     public $notifications=[];
+    public $notificationCheked=[];
+    public $notificationsTocheck=[];
+    public $notificationsTocheckTakeFour=[];
+
+    public $acceso=true;
+    
 
 
     public function render()
@@ -36,9 +42,14 @@ class NotificationsList extends Component
 
         if (Auth::user()) {
             
-            $this->notifications = Notification::where('view',false)->where('user_id',Auth::user()->id)->take(4)->orderBy('id', 'DESC')->get();
+            $this->notifications = Notification::where('view',false)->where('user_id', Auth::user()->id)->take(4)->orderBy('id', 'DESC')->get();
+            $this->notificationsTocheck = Notification::where('view',false)
+            ->where('user_id', Auth::user()->id)->get();
+
         } else {
+
             $this->notifications =[];
+
         }
         
     }
@@ -52,5 +63,24 @@ class NotificationsList extends Component
         $this->loadNotification();
         
     }
+    
+
+    
+    public function notificatonChecked()
+    {
+        $this->notificationsTocheckTakeFour=$this->notifications;
+        foreach ($this->notificationsTocheckTakeFour as $notification) {
+            $notification->setChecked(true);
+        } 
+
+        $this->acceso=true;
+        $this->loadNotification();
+        
+        
+    }
+
+    
+    
+
     
 }
