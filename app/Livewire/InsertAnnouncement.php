@@ -19,15 +19,15 @@ class InsertAnnouncement extends Component
 {
     use WithFileUploads;
 
-    #[Validate('required', message: 'Inserire il titolo.')]
+    #[Validate('required', message: 'I campi con * sono obbligatori.')]
     #[Validate('max:50', message: 'il titolo contiene troppi caratteri.')]
     public $AnnTitle;
-
+    #[Validate('required', message: 'seleziona una categoria')]
     public $AnnCategory;
-    #[Validate('required', message: 'Inserire la descrizione.')]
+    #[Validate('required', message: 'I campi con * sono obbligatori.')]
     #[Validate('min:1', message: 'la descrizione contiene pochi caratteri.')]
     public $AnnDescrip;
-    #[Validate('required', message: 'Inserire il prezzo.')]
+    #[Validate('required', message: 'I campi con * sono obbligatori.')]
     #[Validate('max:10000', message: 'il prezzo è troppo alto.')]
     public $AnnPrice;
 
@@ -139,7 +139,10 @@ class InsertAnnouncement extends Component
     }
 
     public function announcementCreated()
-    {
+    {   
+        if (!$this->AnnTitle || !$this->AnnPrice || !$this->AnnCategory || !$this->AnnDescrip) {
+        return back();
+        }
         $this->dispatch('announcement-created');
         session()->flash('success');
     }

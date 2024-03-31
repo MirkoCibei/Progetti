@@ -15,12 +15,12 @@
 
                         <div class="mb-3">
                             <label for="name" class="form-label">{{__('ui.insertTitle')}}</label>
-                            <input type="text" class="form-control @error('AnnTitle') is-invalid @enderror" id="title" placeholder="{{__('ui.insertPlaceTitle')}}" wire:model="AnnTitle">
+                            <input type="text" class="form-control @error('AnnTitle') is-invalid @enderror" id="title" placeholder="* {{__('ui.insertPlaceTitle')}}" wire:model="AnnTitle">
                             @error('AnnTitle') <span class="text-danger small">{{ $message }}</span> @enderror
                         </div>
                         <div class="mb-3">
                             <label for="price" class="form-label ">{{__('ui.insertPrice')}} € </label>
-                            <input type="number" class="form-control @error('AnnPrice') is-invalid @enderror" id="price" placeholder="{{__('ui.insertPrice')}}" wire:model="AnnPrice">
+                            <input type="number" class="form-control @error('AnnPrice') is-invalid @enderror" id="price" placeholder="* {{__('ui.insertPrice')}}" wire:model="AnnPrice">
                             @error('AnnPrice') <span class="text-danger small">{{ $message }}</span> @enderror
                         </div>
                         <div class="mb-3">
@@ -30,6 +30,7 @@
                                 <option value="{{$category->id}}">{{$category->name}}</option>
                                 @endforeach
                             </select>
+                            @error('AnnCategory') <span class="text-danger small">{{ $message }}</span> @enderror
                         </div>
                         <div class="mb-3">
                             <input wire:model="temporary_images" type="file" name="images" multiple class="form-control shadow   @error('temporary_images.') is-invalid @enderror" placeholder="Img">
@@ -55,9 +56,7 @@
                         @endif
                         <div class="mb-3">
                             <label for="description" class="form-label">{{__('ui.insertDescription')}}</label>
-                            <textarea class="form-control @error('AnnDescrip') is-invalid @enderror" id="description" rows="3" wire:model="AnnDescrip">
-
-                </textarea>
+                            <textarea class="form-control @error('AnnDescrip') is-invalid @enderror" id="description" rows="3" wire:model="AnnDescrip" placeholder="* {{__('ui.insertDescription')}}"></textarea>
                             @error('AnnDescrip') <span class="text-danger small">{{ $message }}</span> @enderror
                         </div>
                         <div class="mb-3" wire:loading.remove>

@@ -9,7 +9,7 @@
     </div>
 
     <div class="mb-3 d-grid">
-      <button wire:click="emailSent" class="btn btn-light p-0" type="submit">invia messaggio</button>
+      <button wire:confirm="stai inviando un email al venditore, il venditore potrà vedere il tuo indirizzo mail e i tuoi dati personali, verrai reindirizzato alla home principale, sei sicuro di di voler inviare la mail?" wire:click="emailSent" class="btn btn-light p-0" type="submit">invia messaggio</button>
     </div>
     <input type="text" class="invisible z-n1" value="{{$receiving_user_id}}" wire:model="receiving_user_id">
     <input type="text" class="invisible z-n1" value="{{$receiving_user_email}}" wire:model="receiving_user_email">

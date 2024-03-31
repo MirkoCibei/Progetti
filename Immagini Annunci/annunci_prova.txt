@@ -1,0 +1,151 @@
+MOTORI: [
+    TITOLO:Mercedes-Benz C 250
+    PREZZO:28500
+    IMMAGINE:Mercedes
+    DESCRIZIONE:L'auto è tenuta in ottime condizioni come si evince dalla documentazione fotografica. 125000 KM
+
+    TITOLO:Range Rover Evoque
+    PREZZO:16700
+    IMMAGINE:Range Rover
+    DESCRIZIONE:Range Rover Evoque Sport 2.2 DIESEL SD4 5P cambio automatico versione pure TECH PACK TOP gamma anna 2015. KM 197220      
+]
+INFORMATICA: [
+    TITOLO:Mac mini late 
+    PREZZO:150
+    IMMAGINE:macmini
+    DESCRIZIONE:Vendo mac mini perfettamente funzionante compreso di cavo di alimentazione telecomando.
+
+    TITOLO:Stampante hp photosmart C8180 All in one
+    PREZZO:40 
+    IMMAGINE:hp
+    DESCRIZIONE:Stampante HP photosmart C8180 con ingressi usb ,memory card ,cd,dvd con cartucce esaurite ma funzionante
+]
+ELETTRODOMESTICI: [
+    TITOLO:Irobot
+    PREZZO:270 
+    IMMAGINE:irobot
+    DESCRIZIONE:Irobot roomba i7 con base di ricarica utilizzato davvero pochissimo prezzo non trattabile.
+
+    TITOLO:Mini piastra per capelli
+    PREZZO:10  
+    IMMAGINE:piastra
+    DESCRIZIONE:Vendo mini piastra per capelli lunga 17,5 cm e larga 2 cm ottima da portare in borsa o in viaggio
+]
+LIBRI: [
+    TITOLO:Harry Potter e la Camera dei Segreti - Tela Rossa
+    PREZZO:35 
+    IMMAGINE:potter
+    DESCRIZIONE:J.K.Rowling, Harry Potter e la Camera dei Segreti con illustrazioni di Serena Riglietti e la prima traduzione di Marina Astrologo (contiene i nomi dei film).
+Prima Edizione Speciale Salani in Tela Rossa: 10^Ristampa - Marzo 2001
+Il libro è in ottime condizioni. Pertanto non presenta strappi, pieghe, scritte o segni sulle pagine, che risultano bianche e immacolate (come da foto). Presenta la sovraccoperta, anch'essa in ottime condizioni. Unico "difetto" si riscontra in una piega sull'ultima pagina bianca (vedi ultima foto).
+
+    TITOLO:La storia della filosofia di Luciano De Crescenzo
+    PREZZO:40   
+    IMMAGINE:filosofia
+    DESCRIZIONE:La storia della filosofia di Luciano De Crescenzo – Mondadori
+1 - Storia della filosofia greca - I presocratici
+2 - Storia della filosofia greca - Da Socrate in poi
+3 - Storia della filosofia medioevale
+4 - Storia della filosofia moderna - Da Cusano a Galilei
+5 - Storia della filosofia moderna - Da Cartesio a Kant
+6 - Panta Rei
+7 - Oi dialogoi
+8 - Così parlò Bellavista
+9 – Ordine e disordine
+Vendo in perfette condizioni, mai sfogliati, praticamente nuovi.
+]
+GIOCHI: [
+    TITOLO:Play 5
+    PREZZO:380  
+    IMMAGINE:PS5
+    DESCRIZIONE:Console sony play 5 in perfetto stato, paragonabile al nuovo, usata pochissime volte, completa do scatola e accessori, annesso il gioco fifa 24.
+
+    TITOLO:X box serie x
+    PREZZO:350   
+    IMMAGINE:xbox
+    DESCRIZIONE:Vendo xbox serie x in ottimo stato ,usata pochissimo per mancanza di tempo, completa di scatole e libretti , controller originale e tre giochi Fifa 24, Tomb Raider e Mortal Kombat XL.
+Preferibile consegna di persona.    
+]
+SPORT: [
+    TITOLO:canna da pesca
+    PREZZO:440 
+    IMMAGINE:pesca
+    DESCRIZIONE:vendo canna da pesca teleregolabile 10 metri in ottime condizioni (vedi foto ) maver made in Italy causa inutilizzo ottima per fiumi e torrenti prezzo 440 trattabile ritiro preferibilmente a mano
+
+    TITOLO:Panca palestra
+    PREZZO:300   
+    IMMAGINE:palestra
+    DESCRIZIONE:Panca per allenamento sportivo con pesi. Comprende 2 bilancieri (uno da 140cm ed uno da 180cm), 12 dischi di pesi ( 2 da 5kg, 4 da 2,5Kg, 6 da 1,25kg), 2 manubri. Non spedisco.    
+]
+IMMOBILI: [
+    TITOLO:Villa o villino tra terracina e san felice
+    PREZZO:4200 
+    IMMAGINE:villa
+    DESCRIZIONE:AGOSTO 4200 per tutto il mese 
+    AFFITTO:Villino bifamiliare situato al piano terra si affitta per week end primaverili e per la stagione estiva a settimane o per il mese intero.
+È situato tra Terracina e San felice all'altezza di Foce Sisto, dietro al bar Ezio a 700 metri dal mare.
+Il villino è circondato da un giardino di 100 mq con un gazebo, doccia esterna e il posto per un auto( all'esterno possibilità di parcheggio 3 auto)
+All'interno ci sono:
+2 camere matrimoniali e una camera con 2 letti a castello ;
+2 bagni, uno con vasca e uno con doccia;
+Ampio soggiorno con divano letto e cucinotto;
+Climatizzatori, zanzariere e inferriate a tutte le finestre;
+Tv , cucina completa di tutti gli elettrodomestici e delle stoviglie ;
+Lavatrice .
+Su richiesta forniamo asciugamani e lenzuola .
+Disponibili 6 posti letto nelle camere e divano letto aggiuntivo in sala.
+Sono ammessi gli animali.
+
+    TITOLO:Stanza
+    PREZZO:200 
+    IMMAGINE:stanza
+    DESCRIZIONE:Fittasi stanza singola con tripla finestra in appartamento sito in via F.sco Crispi a pochi minuti a piedi da piazza XX Settembre.
+                Camera luminosissima arredata con: letto matrimoniale, doppio armadio, comò e cassettiere.L'appartamento al quarto piano con ascensore è composto da quattro stanze singole.
+                Arredato in maniera semplice ma completo di tutti i comfort (termoautonomo- tv- lavatrice- lavastoviglie).
+
+                Ogni stanza ha una porta con chiave personale.
+                Il canone mensile è di 200 euro, esclusa la quota di condominio di 10 euro e le utenze.
+                Zona centralissima!(no animali domestici in casa, no agenzie o telemarketing)
+]
+TELEFONIA: [
+    TITOLO:Apple iPhone 14 ProMax 256GB
+    PREZZO:780 
+    IMMAGINE:14
+    DESCRIZIONE:Con regolare scontrino. Batteria 97%.
+                No scambi. No affaristi
+
+    TITOLO:Iphone 15 pro max 256
+    PREZZO:900
+    IMMAGINE:15
+    DESCRIZIONE:Vendo oppure scambio iphone 15 pro max black titanio 256gb, nuovissimo 6 gg di vita completo di scontrino euronics tutto scritto completo di tutto. Non scedisco grazie 
+]
+ARREDAMENTI: [
+    TITOLO:Tavolo + sedie
+    PREZZO:400 
+    IMMAGINE:tavolo
+    DESCRIZIONE:Tavolo in legno noce con piano intarsiato. Dimensioni 160x85 + due allunghi di 40cm e 6 sedie.
+Ritiro da parte dell’acquirente.
+
+    TITOLO:DIVANO LETTO 3 POSTI CON ISOLA
+    PREZZO:239
+    IMMAGINE:divano
+    DESCRIZIONE:Divano letto 3 posti con isola, colore beige in tessuto antimacchia. Comodo e funzionale. Semplice l'apertura ,per renderlo un comodissimo appoggio per le gambe oppure per farlo diventare un letto matrimoniale. Le misure sono lunghezza 252 cm, con profondità di 98cm per la seduta normale e 167 cm per l'isola(non apribile) . Schienali con inclinazione indipendente regolabili. Omaggio per l'acquirente pulitura e sanificazione professionale prima del ritiro. Solo Ritiro diretto ,non è prevista spedizione. Prezzo trattabile 
+]
+ABBIGLIAMENTO: [
+    TITOLO:Giacca Fay invernale
+    PREZZO:300 
+    IMMAGINE:giacca
+    DESCRIZIONE:Vendo giacca Fay mai usata come nuova con imbottitura rimovibile ed utilizzabile separatamente. Spedizione a carico dell'acquirente.
+
+    TITOLO:Giacca/giubbotto moto Alpinestars
+    PREZZO:200
+    IMMAGINE:giubbotto
+    DESCRIZIONE:Giacca/giubbotto moto Alpinestars faster v2 black and white.
+Comprata l'estate scorsa e usata due volte.
+Condizioni impeccabili, praticamente nuova. Non ha alcun segno o striscio, vendo perché attualmente non ho più la moto.
+Taglia 56
+]
+
+
+
+

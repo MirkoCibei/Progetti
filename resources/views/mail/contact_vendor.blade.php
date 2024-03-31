@@ -13,13 +13,8 @@
             {{$emailSents[0]->body}}
         </p>
 
-        <h3>Rispondi a {{$user->name}}</h3>
+        <h3>Rispondi a {{$user->name}} la sua email è {{$user->email}}</h3>
 
-        <div>
-            <textarea name="" id="" placeholder="scrivi qui!" cols="60" rows="30"></textarea>
-        </div>
-        
-        
     </div>
 </body>
 </html>

@@ -77,7 +77,7 @@ class RevisorController extends Controller
                 'user_id' => Auth::id(),
                 'body' => "Annuncio messo in revisione!",
             ]);
-        
+        return redirect()->back()->with('success', 'Annuncio ripristinato');
     }
 
     public function becomeRevisor( FormRevisorRequest $request)

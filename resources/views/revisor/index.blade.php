@@ -89,26 +89,27 @@
             @endif
           </div>
         </div>
+        <div class="d-flex  justify-content-end py-3 border-top ">
+          <form action="{{route ('revisor.accept_announcement',['announcement'=>$announcement_to_check])}}" method="POST"
+            enctype="multipart/form-data">
+            @csrf
+            @method('PATCH')
+            <button type="submit"
+              class="btn text-white rounded-5  primary-color-bg btnStatic">{{__('ui.btnAccept')}}</button>
+          </form>
+  
+  
+          <form class="ps-3" action="{{route ('revisor.reject_announcement',['announcement'=>$announcement_to_check])}}"
+            method="POST" enctype="multipart/form-data">
+            @csrf
+            @method('PATCH')
+            <button type="submit" class="btn btn-danger rounded-5 ">{{__('ui.btnRefuse')}}</button>
+          </form>
+        </div>
         @endif
 
       </div>
-      <div class="d-flex  justify-content-end py-3 border-top ">
-        <form action="{{route ('revisor.accept_announcement',['announcement'=>$announcement_to_check])}}" method="POST"
-          enctype="multipart/form-data">
-          @csrf
-          @method('PATCH')
-          <button type="submit"
-            class="btn text-white rounded-5  primary-color-bg btnStatic">{{__('ui.btnAccept')}}</button>
-        </form>
-
-
-        <form class="ps-3" action="{{route ('revisor.reject_announcement',['announcement'=>$announcement_to_check])}}"
-          method="POST" enctype="multipart/form-data">
-          @csrf
-          @method('PATCH')
-          <button type="submit" class="btn btn-danger rounded-5 ">{{__('ui.btnRefuse')}}</button>
-        </form>
-      </div>
+     
     </div>
 
 
