@@ -1,10 +1,12 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>{{$title ?? 'Presto.it'}}</title>
 </head>
+
 <body>
     <div>
         <h1>l'utente {{$user->name}} ti ha scritto:</h1>
@@ -17,4 +19,5 @@
 
     </div>
 </body>
+
 </html>

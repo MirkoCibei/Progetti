@@ -32,9 +32,4 @@ Route::get('/rendi/revisore/{user}', [RevisorController::class, 'makeRevisor'])-
 
 Route::get('/ricerca/annuncio', [PageController::class, 'searchAnnouncements'])->name('announcements.search');
 
-Route::post('/lingua/{lang}',[PageController::class, 'setLanguage'])->name('setLocale');
-
- 
-
-
-
+Route::post('/lingua/{lang}', [PageController::class, 'setLanguage'])->name('setLocale');

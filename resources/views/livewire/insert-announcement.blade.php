@@ -2,7 +2,7 @@
     <x-nav />
     <div class="row">
         <div class="col-6 mx-auto">
-            
+
         </div>
     </div>
 
@@ -15,17 +15,17 @@
 
                         <div class="mb-3">
                             <label for="name" class="form-label">{{__('ui.insertTitle')}}</label>
-                            <input type="text" class="form-control @error('AnnTitle') is-invalid @enderror" id="title" placeholder="* {{__('ui.insertPlaceTitle')}}" wire:model="AnnTitle">
+                            <input type="text" class="form-control @error('AnnTitle') is-invalid @enderror" id="title" placeholder="*{{__('ui.insertPlaceTitle')}}" wire:model="AnnTitle">
                             @error('AnnTitle') <span class="text-danger small">{{ $message }}</span> @enderror
                         </div>
                         <div class="mb-3">
                             <label for="price" class="form-label ">{{__('ui.insertPrice')}} € </label>
-                            <input type="number" class="form-control @error('AnnPrice') is-invalid @enderror" id="price" placeholder="* {{__('ui.insertPrice')}}" wire:model="AnnPrice">
+                            <input type="number" class="form-control @error('AnnPrice') is-invalid @enderror" id="price" placeholder="*{{__('ui.insertPrice')}}" wire:model="AnnPrice">
                             @error('AnnPrice') <span class="text-danger small">{{ $message }}</span> @enderror
                         </div>
                         <div class="mb-3">
                             <select id="category_id" class="form-select" wire:model="AnnCategory">
-                                <option selected>{{__('ui.CategorySearch')}}</option>
+                                <option selected>*{{__('ui.CategorySearch')}}</option>
                                 @foreach($categories as $category)
                                 <option value="{{$category->id}}">{{$category->name}}</option>
                                 @endforeach
@@ -59,9 +59,20 @@
                             <textarea class="form-control @error('AnnDescrip') is-invalid @enderror" id="description" rows="3" wire:model="AnnDescrip" placeholder="* {{__('ui.insertDescription')}}"></textarea>
                             @error('AnnDescrip') <span class="text-danger small">{{ $message }}</span> @enderror
                         </div>
-                        <div class="mb-3" wire:loading.remove>
-                            <button class="btn text-white rounded-5  primary-color-bg btnStatic" wire:click="announcementCreated" wire:target="updatedTemporaryImages" type="submit">{{__('ui.btnCreate')}}</button>
+                        <div class="row">
+                            <div class="col-6">
+                                <div class="mb-3" wire:loading.remove>
+                                    <button class="btn text-white rounded-5  primary-color-bg btnStatic" wire:click="announcementCreated" wire:target="updatedTemporaryImages" type="submit">{{__('ui.btnCreate')}}</button>
+                                </div>
+                            </div>
+                            <div class="col-6">
+                                <div>
+                                    <p class="primary-color-text text-end ">{{__('ui.requiredFields')}}</p>
+                                </div>
+                            </div>
+
                         </div>
+
                     </div>
                 </div>
             </form>

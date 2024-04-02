@@ -26,35 +26,23 @@
 
 
             <div id="carouselExampleSlidesOnly" class="carousel slide" data-bs-ride="carousel">
-              <div class="carousel-indicators">
+              <!-- <div class="carousel-indicators">
                 <button type="button" data-bs-target="#carouselExampleSlidesOnly" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
                 <button type="button" data-bs-target="#carouselExampleSlidesOnly" data-bs-slide-to="1" aria-label="Slide 2"></button>
                 <button type="button" data-bs-target="#carouselExampleSlidesOnly" data-bs-slide-to="2" aria-label="Slide 3"></button>
                 <button type="button" data-bs-target="#carouselExampleSlidesOnly" data-bs-slide-to="3" aria-label="Slide 3"></button>
                 <button type="button" data-bs-target="#carouselExampleSlidesOnly" data-bs-slide-to="4" aria-label="Slide 4"></button>
 
-              </div>
+              </div> -->
               <div class="carousel-inner">
                 @if(count($announcement->images))
                 @foreach($announcement->images as $image)
-                <div class="carousel-item @if($loop->first) active @endif">
+                <div class="carousel-item @if($loop->first) active @endif ">
                   <img src="{{$image->getUrl(300,200)}}" class="d-block w-100" alt="...">
                 </div>
                 @endforeach
                 @else
                 <div class="carousel-item active">
-                  <img src="/img/woman-02.png" class="d-block w-100 " alt="...">
-                </div>
-                <div class="carousel-item">
-                  <img src="/img/woman-02.png" class="d-block w-100 " alt="...">
-                </div>
-                <div class="carousel-item">
-                  <img src="/img/woman-02.png" class="d-block w-100 " alt="...">
-                </div>
-                <div class="carousel-item">
-                  <img src="/img/woman-02.png" class="d-block w-100 " alt="...">
-                </div>
-                <div class="carousel-item">
                   <img src="/img/woman-02.png" class="d-block w-100 " alt="...">
                 </div>
                 @endif
@@ -95,7 +83,7 @@
               <div class="mb-3 text-secondary">
                 <p>Per contattare il venditore devi essere loggato, se non hai un account premi su registrati</p>
               </div>
-                
+
               <div class="d-flex mt-3 justify-content-center">
                 <div class="mx-2">
                   <a class="btn btn-primary" href="/login" role="button">{{__('ui.Login')}}</a>

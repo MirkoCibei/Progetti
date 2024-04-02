@@ -8,10 +8,7 @@
         <div class="row">
           @forelse($announcements as $announcement)
           <div class="col-12 col-md-4 my-4">
-            <x-card :announcement="$announcement->id" :user="$announcement->user->name" :price="$announcement->price"
-              :description="$announcement->description" :category="$announcement->category->name"
-              :title="$announcement->title" :root="route('announce.View',$announcement->id)"
-              :images="$announcement->images" />
+            <x-card :announcement="$announcement->id" :user="$announcement->user->name" :price="$announcement->price" :description="$announcement->description" :category="$announcement->category->name" :title="$announcement->title" :root="route('announce.View',$announcement->id)" :images="$announcement->images" />
           </div>
           @empty
           <div class="col 12">
@@ -27,5 +24,5 @@
   </div>
 
 
-
 </x-layout>
+<x-footer />

@@ -22,6 +22,7 @@ class InsertAnnouncement extends Component
     #[Validate('required', message: 'I campi con * sono obbligatori.')]
     #[Validate('max:50', message: 'il titolo contiene troppi caratteri.')]
     public $AnnTitle;
+
     #[Validate('required', message: 'seleziona una categoria')]
     public $AnnCategory;
     #[Validate('required', message: 'I campi con * sono obbligatori.')]
@@ -111,13 +112,12 @@ class InsertAnnouncement extends Component
                 ]);
 
                 RemoveFaces::withChain([
-                    
+
                     new ResizeImage($newImage->path, 300, 200),
                     new GoogleVisionSafeSearch($newImage->id),
                     new GoogleVisionLabelImage($newImage->id)
 
                 ])->dispatch($newImage->id);
-              
             }
 
             // File::deleteDirectory(storage_path('app/livewire-tmp'));
@@ -139,10 +139,11 @@ class InsertAnnouncement extends Component
     }
 
     public function announcementCreated()
-    {   
+    {
         if (!$this->AnnTitle || !$this->AnnPrice || !$this->AnnCategory || !$this->AnnDescrip) {
-        return back();
+            return back();
         }
+
         $this->dispatch('announcement-created');
         session()->flash('success');
     }

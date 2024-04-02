@@ -1,16 +1,6 @@
 <x-layout>
   <x-nav />
   <div class="container p-0">
-    {{-- @if(session()->has('success'))
-    <div class="alert alert-success">
-      {{ session('success') }}
-    </div>
-    @endif
-    @if(session()->has('fail'))
-    <div class="alert alert-warning ">
-      {{ session('fail') }}
-    </div>
-    @endif --}}
 
 
 
@@ -196,7 +186,6 @@
         </div>
 
       </div>
-
     </div>
   </div>
 </x-layout>

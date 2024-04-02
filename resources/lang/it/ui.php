@@ -34,6 +34,7 @@ return [
     'insertPlaceTitle' => 'Nome annuncio',
     'insertPrice' => 'Prezzo',
     'insertDescription' => 'Descrizione',
+    'requiredFields' => 'I campi con * sono obbligatori',
     'btnCreate' => 'Crea',
     'btnCancel' => 'Cancellare',
 

@@ -36,6 +36,7 @@ return [
     'insertPlaceTitle' => 'Announce name',
     'insertPrice' => 'Price',
     'insertDescription' => 'Description',
+    'requiredFields' => 'Fields with * are mandatory',
     'btnCreate' => 'Create',
     'btnCancel' => 'Cancel',
 

@@ -32,45 +32,46 @@ class PageController extends Controller
     // }
 
     public function searchAnnouncements(Request $request)
-    {   
+    {
+        if (session('locale') == 'en') {
 
-    if (session('locale') == 'en') {
-   
+            // Per il solo titolo 
 
-         // Per il solo titolo
-        
-         if ($request->searched && $request->searchedCategory == 'Category') {
-            $announcements = Announcement::search($request->searched)->where('is_accepted', true)->paginate(10);
-            return view('pages.announcement.index', compact('announcements'));
+            if ($request->searched && $request->searchedCategory == 'Category') {
+                $announcements = Announcement::search($request->searched)->where('is_accepted', true)->paginate(10);
+                return view('pages.announcement.index', compact('announcements'));
+            }
+
+            // Errore
+
+            elseif (!$request->searched && $request->searchedCategory == 'Category') {
+                return redirect()->back()->with('errorSearch', 'Ricerca sbagliata');
+            }
         }
 
-        // Errore
+        if (session('locale') == 'es') {
 
-        elseif (!$request->searched && $request->searchedCategory == 'Category') {
-            return redirect()->back()->with('errorSearch', 'Ricerca sbagliata');
-        }
+            // Per il solo titolo 
 
+            if ($request->searched && $request->searchedCategory == 'Categorías') {
+                $announcements = Announcement::search($request->searched)->where('is_accepted', true)->paginate(10);
+                return view('pages.announcement.index', compact('announcements'));
+            }
 
-    }
-    if (session('locale') == 'es') {
+            // Errore
 
-
-         // Per il solo titolo
-        
-         if ($request->searched && $request->searchedCategory == 'Categorías') {
-            $announcements = Announcement::search($request->searched)->where('is_accepted', true)->paginate(10);
-            return view('pages.announcement.index', compact('announcements'));
-        }
-
-        // Errore
-
-        elseif (!$request->searched && $request->searchedCategory == 'Categorías') {
-            return redirect()->back()->with('errorSearch', 'Ricerca sbagliata');
+            elseif (!$request->searched && $request->searchedCategory == 'Categorías') {
+                return redirect()->back()->with('errorSearch', 'Ricerca sbagliata');
+            }
         }
 
 
-    }
-        
+
+
+
+
+        // Quello incrociato
+
 
 
         if ($request->searched && $request->searchedCategory != 'Categorie') {
@@ -81,8 +82,8 @@ class PageController extends Controller
 
 
 
-        // Per il solo titolo
-        
+        // Per il solo titolo 
+
         elseif ($request->searched && $request->searchedCategory == 'Categorie') {
             $announcements = Announcement::search($request->searched)->where('is_accepted', true)->paginate(10);
             return view('pages.announcement.index', compact('announcements'));
@@ -94,12 +95,14 @@ class PageController extends Controller
             return redirect()->back()->with('errorSearch', 'Ricerca sbagliata');
         }
 
+
+
         // Per la categoria
 
         elseif (!$request->searched && $request->searchedCategory != 'Categorie') {
-            
+
             $announcements = Announcement::where('category_id', $request->searchedCategory)->where('is_accepted', true)->paginate(10);
-            
+
             return view('pages.announcement.index', compact('announcements'));
         }
     }
